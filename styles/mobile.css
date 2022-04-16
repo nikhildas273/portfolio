@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+.container {
+  width: min(75%, 960px);
+  margin-inline: auto;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+/* navbar */
+#navbar {
+  background-color: #44344f;
+}
+#navbar .container {
+  color: #5ad2f4;
+  display: flex;
+  justify-content: space-between;
+}
+#navbar .logo {
+  padding: 10px;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 20px;
+  padding: 10px;
+}
+#navbar a {
+  text-decoration: none;
+  color: #5ad2f4;
+}
+    /* intro */
+
+#intro {
+  background-color: #446df6;
+  color: #fff;
+  height: 70%;
+}
+#intro .container {
+  height: 100%;
+}
+#intro .about {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img{
+  box-shadow: 0 36px 40px rgba(0, 0 , 0 , 0.3);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* project */
+#container{
+    display: flex;
+    justify-content: center;
+}
+#project .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.project-img{
+    width: 200px;
+    margin: 5px;
+    border-radius: 10px;
+}
+#project .project-card{
+    width: 220px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0 , 0 , 0.3);
+}
+
+@media only screen and (max-width : 768px) {
+    #project .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;;
+    }
+    #project .project-card{
+    width: 320px;
+    height: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0 , 0 , 0.3);
+}
+.container {
+  width: 100% - 2rem;
+  margin-inline: auto;
+}
+}
+#project .project-card:hover{
+    box-shadow: 0 0 20px rgba(0, 0 , 0 , 0.5);
+}
+
+#project .btn{
+  border-radius: 10px;
+  border: none;
+  background-color: #446df6;
+  padding: 10px;
+  margin: 25px;
+}
+
+/* Contact */
+
+#contact{
+  height: 100vh;
+}
+
